@@ -1,0 +1,41 @@
+[debug] [2023-11-12T14:47:05.418Z] ----------------------------------------------------------------------
+[debug] [2023-11-12T14:47:05.420Z] Command:       /usr/local/bin/node /Users/pradeep/.npm-global/bin/firebase serve
+[debug] [2023-11-12T14:47:05.421Z] CLI Version:   12.8.1
+[debug] [2023-11-12T14:47:05.423Z] Platform:      darwin
+[debug] [2023-11-12T14:47:05.423Z] Node Version:  v18.18.0
+[debug] [2023-11-12T14:47:05.425Z] Time:          Sun Nov 12 2023 20:17:05 GMT+0530 (India Standard Time)
+[debug] [2023-11-12T14:47:05.426Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-12T14:47:05.664Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-12T14:47:05.666Z] > authorizing via signed-in user (lspradeep21@gmail.com)
+[debug] [2023-11-12T14:47:05.667Z] [iam] checking project kural-8bca9 for permissions ["firebase.projects.get"]
+[debug] [2023-11-12T14:47:05.669Z] > refreshing access token with scopes: []
+[debug] [2023-11-12T14:47:05.672Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-12T14:47:05.672Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-12T14:47:05.830Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-12T14:47:05.834Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-12T14:47:05.867Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/kural-8bca9:testIamPermissions [none]
+[debug] [2023-11-12T14:47:05.870Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/kural-8bca9:testIamPermissions x-goog-quota-user=projects/kural-8bca9
+[debug] [2023-11-12T14:47:05.870Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kural-8bca9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-12T14:47:07.324Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/kural-8bca9:testIamPermissions 200
+[debug] [2023-11-12T14:47:07.327Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/kural-8bca9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-12T14:47:07.329Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9 [none]
+[debug] [2023-11-12T14:47:08.147Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9 200
+[debug] [2023-11-12T14:47:08.150Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9 {"projectId":"kural-8bca9","projectNumber":"1068746810966","displayName":"kural","name":"projects/kural-8bca9","resources":{"hostingSite":"kural-8bca9"},"state":"ACTIVE","etag":"1_f99023c0-df11-47a3-850c-c7a6d443dc31"}
+[info] 
+[info] === Serving from '/Users/pradeep/Svelte/svelte-kural-app'...
+[info] 
+[debug] [2023-11-12T14:47:08.163Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/kural-8bca9/sites 
+[debug] [2023-11-12T14:47:09.263Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/kural-8bca9/sites 200
+[debug] [2023-11-12T14:47:09.266Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/kural-8bca9/sites {"sites":[{"name":"projects/kural-8bca9/sites/kural-8bca9","defaultUrl":"https://kural-8bca9.web.app","appId":"1:1068746810966:web:c24b5dde6dbaef16f37df7","type":"DEFAULT_SITE"}]}
+[debug] [2023-11-12T14:47:09.268Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9/webApps/1:1068746810966:web:c24b5dde6dbaef16f37df7/config [none]
+[debug] [2023-11-12T14:47:10.506Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9/webApps/1:1068746810966:web:c24b5dde6dbaef16f37df7/config 200
+[debug] [2023-11-12T14:47:10.509Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9/webApps/1:1068746810966:web:c24b5dde6dbaef16f37df7/config {"projectId":"kural-8bca9","appId":"1:1068746810966:web:c24b5dde6dbaef16f37df7","storageBucket":"kural-8bca9.appspot.com","apiKey":"AIzaSyDUIMEOPe-ZcrrTQiPwLPqNd7rh0ebkDbg","authDomain":"kural-8bca9.firebaseapp.com","messagingSenderId":"1068746810966","measurementId":"G-L0P1YSFXSS"}
+[debug] [2023-11-12T14:47:10.520Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9 [none]
+[debug] [2023-11-12T14:47:10.897Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9 200
+[debug] [2023-11-12T14:47:10.897Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kural-8bca9 {"projectId":"kural-8bca9","projectNumber":"1068746810966","displayName":"kural","name":"projects/kural-8bca9","resources":{"hostingSite":"kural-8bca9"},"state":"ACTIVE","etag":"1_f99023c0-df11-47a3-850c-c7a6d443dc31"}
+[debug] [2023-11-12T14:47:10.899Z] Specified "public" directory "public" does not exist; Deploy to Hosting site "kural-8bca9" may fail or be empty.
+[info] i  hosting[kural-8bca9]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[kural-8bca9]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [12/Nov/2023:14:47:16 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [12/Nov/2023:14:47:16 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0\""}}
+[info] i  hosting: ::1 - - [12/Nov/2023:14:47:20 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [12/Nov/2023:14:47:20 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0\""}}
